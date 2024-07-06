@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.oops.polymorphism.methodoverloading.Data">
+  <grid id="27dc6" binding="main" layout-manager="GridLayoutManager" row-count="8" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-7802172"/>
+      <font name="Georgia" size="72" style="1"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="f341" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Britannic Bold" size="48" style="1"/>
+          <foreground color="-14015557"/>
+          <text value="Heading"/>
+        </properties>
+      </component>
+      <component id="1ef10" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Britannic Bold" size="48" style="1"/>
+          <foreground color="-14015557"/>
+          <text value="Sub Heading"/>
+        </properties>
+      </component>
+      <component id="23f64" class="javax.swing.JTextField" binding="noTextField" default-binding="true">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1905934"/>
+          <font name="Bodoni MT Black" size="28" style="1"/>
+          <foreground color="-6086213"/>
+          <text value="No:"/>
+        </properties>
+      </component>
+      <component id="d28a8" class="javax.swing.JTextField" binding="nameTextField" default-binding="true">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1905934"/>
+          <font name="Bodoni MT Black" size="28" style="1"/>
+          <foreground color="-6086213"/>
+          <text value="Name:"/>
+        </properties>
+      </component>
+      <component id="8dade" class="javax.swing.JTextField" binding="departmentTextField" default-binding="true">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1905934"/>
+          <font name="Bodoni MT Black" size="28" style="1"/>
+          <foreground color="-6086213"/>
+          <text value="Department:"/>
+        </properties>
+      </component>
+      <component id="f6a22" class="javax.swing.JButton" binding="INSERTButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-2821541"/>
+          <font name="Gill Sans Ultra Bold" size="26" style="1"/>
+          <foreground color="-10776133"/>
+          <text value="INSERT"/>
+        </properties>
+      </component>
+      <component id="eeb0a" class="javax.swing.JButton" binding="UPDATEButton" default-binding="true">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-2821541"/>
+          <font name="Gill Sans Ultra Bold" size="26" style="1"/>
+          <foreground color="-10776133"/>
+          <text value="UPDATE"/>
+        </properties>
+      </component>
+      <component id="88e32" class="javax.swing.JButton" binding="DELETEButton" default-binding="true">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-2821541"/>
+          <font name="Gill Sans Ultra Bold" size="26" style="1"/>
+          <foreground color="-10776133"/>
+          <text value="DELETE"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

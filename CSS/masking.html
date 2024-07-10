@@ -1,0 +1,27 @@
+<html>
+    <head></head>
+    <style>
+        div img{
+            width: 200px;
+            height: 200px;
+        }
+
+        #masked{
+            width: 300px;
+            height: 300px;
+            -webkit-mask-box-image:url(img2.jfif);
+            background-color:black;
+        }
+    </style>
+    <body>
+        <center>
+        <div>
+            <h2>Origial image</h2>
+            <img src="image.jfif" alt="image">
+            <img src="img3.png" alt="img">
+        </div>
+        <h2>After Masking</h2>
+        <img src="image.jfif" alt="image" id="masked">
+    </center>
+    </body>
+</html>

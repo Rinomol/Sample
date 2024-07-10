@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>String</title>
+    </head>
+    <body>
+
+        <!-- <h2>charAt()</h2>
+        <p>It is used to find out a char value present at the specified index in a string</p>
+        <script>
+            var stringVariable="Welcome to all";
+            document.write(stringVariable.charAt(6)+"<br>");
+            document.write(stringVariable.charAt()+"<br>"); //return first char
+            document.write(stringVariable.charAt(stringVariable.length-3))
+        </script><hr> -->
+
+
+        <!-- <h2>charCodeAt()</h2>
+        <p>It is used to find out the unicode value of a character at the specific index in a string</p>
+        <script>
+            var name="Welcome to all";
+            document.write(name.charCodeAt(6)+"<br>")
+            document.writeln(name.charCodeAt()+"<br>")
+            document.writeln(name.charCodeAt(name.length-1)+"<br>")
+            document.writeln(name.charCodeAt(34))   // It show NaN becuz it greater than length of string
+                                                    //  NaN means Not-a-Number
+        </script><hr> -->
+
+
+        <!-- <h2>concat()</h2>
+        <p>It combine two or more strings and returns a new string. 
+        It does not make any change in the original string </p>
+        <script>
+            var cat="Happy Birthday";
+            document.write(cat.concat(" "+"Shalini"))
+        </script> -->
+
+
+        <!-- <h2>replace()</h2>
+        <script>
+            var place="Welcome to all";
+            document.write(place.replace("Welcome","Hello")+"<br>")
+
+            var place1="she was working in chennai. she always busy in work";
+            document.write(place1.replace(/she/g,"He")+"<br>")  //  using global search modifier
+            document.writeln(place1.replace(/she/,"He")+"<br>");  // replace only first match
+            document.write(place1.replace(/she/gi,"He"))    // using ignore flag modifier
+
+        </script><hr> -->
+
+
+        <!-- <h2>substr()</h2>
+        <p>This method fetch the part of the given string and return new string. 
+            The number of characters to be fetched depends upon the length provided with the method.
+        <b>Syntax: </b>string.substr(start, length)</p>
+        <script>
+            var substring="Welcome to all";
+            document.write(substring.substr(0,6)+"<br>")
+            document.write(substring.substr(6,6)+"<br>")
+            document.write(substring.substr(6)+"<br>")  // it show only the starting index
+           
+            document.write(substring.substr()+"<br>")   // it will not pass any parameter with the method
+                                                        // in such case, it returns the complete string
+            
+            document.write(substring.substr(-6,6)+"<br>")     // it will provide negative number as a starting index
+                                                        // in such case, it starts fetching from the end of string
+        </script><hr> -->
+
+
+        <!-- <h2>slice()</h2>
+        <p>It is used to fetch the part of the string and returns the new string.
+            <b>Syntax: string.slice(start, end)</b></p>
+        <script>
+            var strslice="Welcome to all";
+            document.write(strslice.slice(2,5)+"<br>")  // print part of string by passing start and end index
+            document.write(strslice.slice(0)+"<br>")    // it fetch string up to its length
+            document.write(strslice.slice(4)+"<br>")
+            document.write(strslice.slice(-5)+"<br>")
+            document.write(strslice.slice(-5,-1)+"<br>")
+        </script><hr> -->
+
+
+        <!-- <h2>substring()</h2>
+        <p>It is similar to slice method but does not allow negative index</p>
+        <script>
+            var name="Welcome to all";
+            document.write(name.substring(2,5)+"<br>")
+        </script><hr> -->
+
+
+        <!-- <h2>toString()</h2>
+        <p>It is a javascript library function used to convert the given object to its corresponding string 
+            representation. This method can be used with numbers, strings, arrays, and objects
+        </p>
+        <script>
+            var arr=["hi","all","this","is","an","array"]
+            document.write(arr.toString()+"<br>")   // arrays convert to string
+
+            var num=10;
+            var str=num.toString()  // number convert to string
+            document.write(str+"<br>"+typeof(str)+"<br>")
+
+            var num1=new Number(10)
+            document.write(num1.toString()+"<br>")  // object convert to string
+
+            var num2=new String("Hello sir, how r u")
+            document.write(num2.toString()+"<br>")
+        </script><hr> -->
+
+
+        <!-- <h2>toLowerCase(), toUpperCase()</h2>
+        <script>
+            var lower="HELLO";
+            document.write(lower.toLocaleLowerCase()+"<br>")
+            document.write(lower.toLowerCase()+"<br>")
+
+            var upper="hello";
+            document.write(upper.toLocaleUpperCase()+"<br>")
+            document.write(upper.toUpperCase()+"<br>")
+        </script><hr> -->
+
+
+        <h2>trim(), split()</h2>
+        <script>
+            var space="  hello world  ";
+            document.write(space.trim()+"<br>")
+
+            var name="Hel@lo @world";
+            document.write(name.split("@")+"<br>")
+        </script>
+
+
+    </body>
+</html>

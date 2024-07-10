@@ -1,0 +1,30 @@
+<html>
+    <head></head>
+    <body>
+        <div>
+        <label>password</label>
+        <input type="password" id="password1"><br><br>
+        <label>confirm password</label>
+        <input type="password" id="password2">
+        </div><br><br><br>
+    
+        <div>
+            <button type="button" onclick="return checkpassword()">submit</button>
+        </div>
+        
+        <script>
+            function checkpassword(){
+                var pass1=document.getElementById("password1").value
+                var pass2=document.getElementById("password2").value
+            if(pass1==pass2){
+               // alert("password matched")
+               document.write("password same")
+               window.location.assign("img.jfif")
+            }
+            else{
+                alert("password did not match")
+            }
+        }
+        </script>
+    </body>
+</html>

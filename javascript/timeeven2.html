@@ -1,0 +1,20 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <h2>setTimeOut and clearTimeOut</h2>
+        <h2 id="msg">click this button before 3 seconds</h2>
+        <button onclick="mytime()">cancel timeout</button>
+
+        <script>
+            t1=setTimeout(function(){
+                alert("Welcome to all")
+            },3000)
+            function mytime(){
+                clearTimeout(t1,3000)
+                document.getElementById("msg").innerHTML="My timeout has been cancelled";
+            }
+        </script>
+    </body>
+</html>

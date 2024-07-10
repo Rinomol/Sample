@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            button{
+                border: 5px solid green;
+                border-radius: 35px;
+                width: 100px;
+                height: 100px;
+                font-size: 20px;
+            }
+        </style>
+        <script>
+            function mess(){
+                document.write('<img src="img.jfif"/>');
+            }
+
+            function messonload(){
+                alert("click")
+            }
+        </script>
+    </head>
+    <body onload="messonload()">
+
+        <!-- <ul>
+            <lh>Mouse even</lh>
+            <li>onclick</li>
+            <li>ondblclick</li>
+            <li>onmouseover</li>
+            <li>onmouseout</li>
+            <li>onload</li>
+        </ul> -->
+
+        <button onclick="mess()">on click</button>
+        <button ondblclick="mess()">on double click</button>
+        <button onmouseover="mess()">on mouse over</button>
+        <button onmouseout="mess()">on mouse out</button>
+    </body>
+</html>

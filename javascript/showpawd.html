@@ -1,0 +1,18 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function show(){
+                var passvar=document.getElementById("pass")
+                if(passvar.type=='password'){
+                    passvar.type='text';
+                }
+                else{
+                    passvar.type='password';
+                }
+            }
+        </script>
+        password: <input type="password" id="pass"><br><br>
+        remenber: <input type="checkbox" onclick="show()">
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <!-- <style>
+            input{
+                width: 25%;
+                height: 20%;
+                padding: 20px;
+            }
+        </style> -->
+    </head>
+    <body>
+
+        <ul>
+            <lh>Keyboard even</lh>
+            <li>onkeypress</li>
+            <li>onkeydown</li>
+            <li>onkeyup</li>
+            <li>onfocus</li>
+        </ul>
+
+        <!-- <input type="text"
+        onkeypress="this.style.color='red';"
+        onkeydown="this.style.backgroundColor='green';"
+        onkeyup="this.style.backgroundColor='yellow';" > -->
+
+        <form action="">
+            Click this button <br>
+            <input type="button" value="click me!" onclick="myFun()"><br>
+            <input type="text" id="username" onfocus="this.blur()"><br><br>
+            <input type="text" value="Shalini">
+        </form>
+        <script>
+            function myFun(){
+                document.getElementById("username").value="Dhruv";
+            }
+        </script>
+    </body>
+</html>

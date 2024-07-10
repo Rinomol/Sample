@@ -1,0 +1,239 @@
+<html>
+    <head>
+        <title>Ctrol flow</title>
+    </head>
+    <body>
+
+        <!-- <h2>if statement</h2>
+        <div style="background-color: aquamarine;">
+        <p>If the condition is true, the statement will execute. Otherwise it not execute. <br>
+            <b>Syntax: </b> <br> 
+            if(condition)<br>
+            { <br>
+                ....block of code <br>
+            }</p>
+            </div>
+        <script>
+            var name="Kayal", newname="vizhi";
+            if(name==newname){
+                document.write("Name is equal")
+                }
+            if(name!=newname){
+                document.write("My name is "+name +" " +newname)
+            }
+        </script> <hr> -->
+
+
+        <!-- <h2>Nested if statement</h2>
+        <div style="background-color: aquamarine;">
+        <p>a if statement is presented inside the another if statement</p>
+        <p><b>Syntax: </b> <br> 
+            if(condition)<br>
+            {<br>
+            if(condition)<br>
+            {<br>
+                .....statement<br>
+            }<br>
+            }</p>
+            </div>
+            <script>
+                var name="Kayal", newname="Vizhi", oldname="Malar";
+                if(name!=newname){
+                    if(newname!=oldname){
+                        document.write("Name is "+name +" " +newname +" " +oldname);
+                    }
+                }
+            </script> <br>-->
+
+
+            <!-- <h2>if else statement</h2>
+            <div style="background-color: aquamarine;">
+                <p>If condition is true, ‘if’ block will be executed, otherwise ‘else’ block is executed.
+                <b>Syntax : </b><br> 
+                    if(condition){<br>
+                       ...... statement <br>
+                    } <br>
+                    else{ <br>
+                       ....... statement <br>
+                    } <br>                
+                </p>
+            </div>
+            <script>
+                var age=18, country="India";
+                if((age>=18) && (country="India")){
+                    document.write("You are eligible to drive")
+                }
+                else{
+                    document.write("You are not eligible to drive")
+                }
+            </script><hr> -->
+
+
+
+        <!-- <h2>else if</h2>
+        <div style="background-color: aquamarine;">
+            <p>It execute only one statement from multiple conditions <br>
+                <b>Syntax :</b><br>
+                if(condition){ <br>
+                    ....statement <br>
+                } <br>
+                else if(condition){ <br>
+                    ..statement <br>
+                } <br>
+                else if(condition){ <br>
+                    ...statement <br>
+                } <br>
+                else{ <br>
+                    ..statement <br>
+                } <br>
+            </p>
+        </div>
+        <script>
+            let browser="chrome";
+            if(browser=="edge"){
+                document.write("Browser name is edge")
+            }
+            else if(browser=="chrome"){
+                document.write("Browser name is chrome")
+            }
+            else if(browser=="safari"){
+                document.write("Browser name is safari")
+            }
+            else{
+                document.write("You entered browser name is not correct")
+            }
+        </script> -->
+
+
+
+        <!-- <h2>switch case</h2>
+        <div style="background-color: aquamarine;">
+        <p>It execute one statement from multiple ones. <br>
+        <b>Syntax :</b><br>
+        switch(expression){ <br>
+            case value1: <br>
+                ...statement; <br>
+                ...break; <br>
+            case value2:<br>
+                ...statement;<br>
+                ...break;<br>
+            case value3:<br>
+                ...statement;<br>
+                break;<br>
+            defalut:<br>
+                ...statement;<br>
+        }</p><br>
+        </div>
+        <script>
+            let brow="chrome";
+            switch(brow){
+                case "edge":
+                    document.write("Browser name is edge");
+                    break;
+                case "chrome":
+                    document.write("Browser name is chrome");
+                    break;
+                case "safari":
+                    document.write("Browser name is safari");
+                    break;
+                default:
+                    document.write("Enter correct browser name");
+            }
+        </script> -->
+
+
+
+        <!-- <h1>Looping statement</h1>
+
+        <h2>while loop</h2>
+        <div style="background-color: beige;">
+            <p>It execute the block of statement until the condition is false<br>
+            <b>Syntax: </b><br>
+            while(condition){<br>
+                ...block of code <br>
+            }</p><br>
+        </div>
+        <script>
+            var n=10;
+            while(n>1){
+                document.writeln(n +"<br>");
+                n--;
+            }
+        </script> -->
+
+
+        <!-- <h2>do while loop</h2>
+        <div>
+            <p>It execute the block of statement until the condition is false. <br>
+                <b>Syntax : </b><br>
+                do {<br>
+                   ... block of code<br>
+                }while(condition)<br>
+            </p><br>
+        </div>
+        <script>
+            var n=10;
+            do{
+                document.writeln(n +"<br>");
+                n--;
+            }while(n>1)
+        </script> -->
+
+
+
+        <h2>for loop</h2>
+        <div>
+            <p>It execute the block of statement until the condition is false. <br>
+                <b>Syntax : </b><br>
+                for(initialization; condition; increment/decrement){<br>
+                    ...block of code<br>
+                    }<br>
+            </p>
+        </div>
+        <script>
+            for(var n=10; n>1; n--){
+                document.write(n +"<br>")
+            }
+        </script>
+
+        
+
+        <!-- <h2>break statement</h2>
+        <div>
+            <p>It terminate the execution of program <br>
+            <b>Syntax:</b>
+        if(condition){
+            break;
+        }</p>
+        </div>
+        <script>
+            for(var n=10; n>1; n--){
+                document.write(n +"<br>")
+                if(n==5){
+                    break;
+                }
+            }
+        </script> -->
+
+
+
+        <h2>continue statement</h2>
+        <div>
+            <p>It skip and continue the execution of program <br>
+            <b>Syntax:</b>
+        if(condition){
+            continue;
+        }</p>
+        </div>
+        <script>
+            for(var n=10; n>1; n--){
+                if(n==5){
+                    continue;
+                }
+                document.write(n +"<br>")                
+            }
+        </script>
+
+
+    </body>
+</html>

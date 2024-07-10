@@ -1,0 +1,27 @@
+<html>
+    <head></head>
+    <body>
+        <form action="img.jfif" method="get" name="myform" onsubmit="validate()">
+            <label>Name: </label>
+            <input type="text" name="name"><br><br>
+            <label>Password: </label>
+            <input type="password" name="password"><br><br>
+            <!-- <input type="submit" value="register"> -->
+            <button type="submit" >submit</button><br><br>
+        </form>
+        <script>
+            function validate(){
+                var name=document.myform.name.value;
+                var pass=document.myform.password.value;
+                if(name==null || name==''){
+                    alert("name cannot be blank");
+                    return false;
+                }
+                else if(pass.length>0){
+                    alert("password must 6 char long");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

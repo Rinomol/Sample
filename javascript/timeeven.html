@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Timing function</title>
+    </head>
+    <body>
+        <!-- <h2>setInterval syntax:</h2>
+        <h2>setInterval(function,millisecond)</h2> -->
+
+        <script>
+            t=setInterval(function(){
+                if(document.getElementById("btn").style.background=='blue'){
+                    document.getElementById('btn').style.background='green';
+                }
+                else{
+                    document.getElementById('btn').style.background='blue'
+                }
+            },1000)
+        </script>
+
+        <button id="btn" style="background: blue;">Welcome to all</button>
+        <button id="btn" onclick="clearInterval(t,3000)" style=background:red;>stop</button>
+    </body>
+</html>

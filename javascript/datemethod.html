@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <p id="test1"></p>
+        <p id="test2"></p>
+        <p id="test3"></p>
+
+    <script>
+        var d=new Date();
+        var hour=d.getHours();
+        var min=d.getMinutes();
+        var sec=d.getSeconds();
+        document.getElementById("test1").innerHTML="Time : " +hour +":" +min +":" +sec+":";
+
+        var day=d.getDay();
+        var date=d.getDate();
+        var month=d.getMonth()+1;
+        var year=d.getFullYear();
+        document.write(d);
+        document.getElementById("test2").innerHTML="Date : " +date +"/" +month +"/" +year;
+        
+        const dob=new Date(2021,8,21);
+        document.getElementById("test3").innerHTML=dob.toDateString();
+    </script>
+    </body>
+</html>

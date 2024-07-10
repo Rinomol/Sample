@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Data Type</title>
+    </head>
+    <body>
+
+        <!-- <h1>Number</h1>
+        <h2 id="demo"></h2>
+        <script>
+            var length=3, breath=4;
+            document.getElementById("demo").innerHTML="Area of rectangle = "+(length*breath);
+        </script> -->
+
+
+        <!-- <h1>String</h1>
+        <h2 id="demo"></h2>
+        <script>
+            var firstname="Kayal", secondname="Vizhi";
+            document.getElementById("demo").innerHTML="My name is : "+(firstname+" "+secondname)
+        </script> -->
+
+
+        <!-- <h1>Boolean</h1>
+        <h2 id="demo"></h2>
+        <h2 id="demo1"></h2>
+        <script>
+            var firstname="Kayal", secondname="Vizhi";
+            if(firstname==secondname){
+                document.getElementById("demo").innerHTML="False";
+            }
+            else{
+                document.getElementById("demo").innerHTML="My name is : "+(firstname+" "+secondname);
+            }
+        </script> -->
+
+        
+            <!-- <h2>Arrays in literals</h2>
+            <script>
+                var empname=["Malar","Kayal","Iniya","Kaviya"];
+                for(var i=0; i<empname.length; i++){
+                    document.write(empname[i]+"<br>")
+                }
+            </script> -->
+
+
+            <!-- <h2>Javascript array constructor using new keyword</h2>
+            <script>
+                var empname=new Array("Malar","Kayal","Iniya","Kaviya");
+                for(var i=0;i<empname.length;i++){
+                    document.write(empname[i]+"<br>")
+                }
+            </script> -->
+
+            <!-- <h2>Object</h2>
+            <h2>Javascript object by object literal</h2>
+            <p>Syntax:  object={property1:value1, property2:value2,......propertyn:valuen}</p>
+            <h2 id="demo"></h2>
+            <script>
+                empDetail={id:1, name:"Malar", salary:50000}
+                document.getElementById("demo").innerHTML="Emp id : "+empDetail.id+"<br>"+
+                                                          "Emp name : "+empDetail.name+"<br>"+
+                                                          "Emp salary : "+empDetail.salary;
+            </script> -->
+
+
+            <!-- <h1>By creating instance of object</h1>
+            <p>Syntax:  var objectname = new Object();</p>
+            <h2 id="demo"></h2>
+            <script>
+                var empDetailOne = Object();
+                empDetailOne.id=1, empDetailOne.name="Malar", empDetailOne.salary=5000;         
+                document.getElementById("demo").innerHTML="Emp id : "+empDetailOne.id+"<br>"+
+                                                          "Emp name : "+empDetailOne.name+"<br>"+
+                                                          "Emp salary : "+empDetailOne.salary;
+            </script> -->
+
+
+            <h1>By using an object constructor</h1>
+            <p>Here, you need to create function with arguments. 
+                Each argument value can be assigned in the current object by using this keyword.
+                This keyword refers to the current object</p>
+            <h2 id="demo"></h2>
+            <script>
+                function employee(id, name, salary){
+                    this.id=id;
+                    this.name=name;
+                    this.salary=salary;
+                }
+                empdet = new employee(2,"Kayal",50000)
+                document.getElementById("demo").innerHTML="Employee id : "+empdet.id+"<br>"+
+                                                          "Employee name : "+empdet.name+"<br>"+
+                                                          "Employee salary : "+empdet.salary+"<br>";
+            </script>
+
+    </body>
+</html>
